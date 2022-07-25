@@ -3,4 +3,4 @@ db.produtos.deleteMany(
   { nome: true, _id: false },
 );
 
-// Incompleta
+db.produtos.find({}, { nome: true, _id: false });
