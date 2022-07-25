@@ -1,2 +1,1 @@
-db.produtos.find({}, { nome: true, vendidos: true }).sort({ vendidos: 1 });
-// Não funcionou...
+db.produtos.find({}, { nome: true, vendidos: true, _id: false }).sort({ vendidos: 1 });
